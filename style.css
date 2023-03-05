@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+g {
+    stroke-width: 5px;
+}
+
+circle {
+    fill: blue;
+    stroke: green;
+}
+
+.rectangle {
+
+    width: 200px;
+    height: 100px;
+    fill: black;
+    stroke: red;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    fill: violet;
+    stroke: palevioletred;
+}
+
+ellipse {
+    fill: navajowhite;
+    stroke: gold;
+}
+
+.square-second {
+    fill: green;
+    stroke: greenyellow;
+}
+
+.square-second:hover {
+    animation: color-change 5s infinite linear;
+}
+
+@keyframes color-change {
+    to {
+        filter: hue-rotate(360deg);
+    }
+
+}
